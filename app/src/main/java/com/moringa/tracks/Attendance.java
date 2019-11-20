@@ -3,6 +3,7 @@ package com.moringa.tracks;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -36,6 +37,8 @@ textViewDate.setText(currentDate);
 
         button = (Button) findViewById(R.id.button);
 
+        radioBtn =(RadioButton)findViewById(R.id.absent);
+        radioBtn =(RadioButton)findViewById(R.id.radio_late);
 
     }
     public void onRadioButtonClicked(View view){
@@ -51,5 +54,16 @@ textViewDate.setText(currentDate);
 
             }
         });
-    }
+
+        radioBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                Intent intent = new Intent(Attendance.this,AttendanceForm.class);
+                startActivity(intent);
+}
+    });
+
+}
 }
