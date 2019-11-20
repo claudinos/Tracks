@@ -16,13 +16,13 @@ public class ProfileActivity extends AppCompatActivity {
     }
     public void browser1(View view){
         Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                "mailto", "abc@gmail.com", null));
+                "mailto", "lily@gmail.com", null));
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, "This is my subject text");
         this.startActivity(Intent.createChooser(emailIntent, null));
     }
 
     public void browser2(View view){
-        String PhoneNum = "+250 787971925";
+        String PhoneNum = "+250 785276111";
         Intent callIntent = new Intent(Intent.ACTION_DIAL);
         callIntent.setData(Uri.parse("tel:"+Uri.encode(PhoneNum.trim())));
         callIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
