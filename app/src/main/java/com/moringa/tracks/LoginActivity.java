@@ -107,6 +107,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     Log.w(TAG, "signInWithEmail", task.getException());
                     Toast.makeText(LoginActivity.this, "Authentication failed.", Toast.LENGTH_LONG).show();
                 }
+                if(task.isSuccessful()){
+
+                    Toast.makeText(LoginActivity.this, "Welcome to Tracks\uD83D\uDC63", Toast.LENGTH_LONG).show();
+                }
             }
         });
     }

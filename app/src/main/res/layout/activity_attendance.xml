@@ -1,72 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="16dp"
-    android:paddingTop="16dp"
     android:orientation="vertical"
     tools:context=".Attendance">
 
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Drawer">
 
-
-
-    <TextView
-        android:id="@+id/radio_textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Attendance"
-        android:paddingLeft="100dp"
-        android:textSize="30dp"/>
-
-    <RadioGroup
-        android:id="@+id/radio"
-        android:layout_width="wrap_content"
-        android:layout_marginTop="60dp"
-        android:paddingLeft="140dp"
-        android:layout_height="wrap_content">
-
-        <RadioButton android:id="@+id/radio_pirates"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Present"
-            android:onClick="onRadioButtonClicked"/>
-
-        <RadioButton android:id="@+id/absent"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Absent"
-            android:onClick="onRadioButtonClicked"/>
-
-        <RadioButton android:id="@+id/radio_late"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="late"
-            android:onClick="onRadioButtonClicked"/>
-
-
-
-
-        <Button
-            android:id="@+id/button"
+        <com.google.android.material.navigation.NavigationView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:padding="10dp"
-            android:text="Submit"
-            android:textColor="@color/black" />
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/header"
+            app:itemIconTint="@color/lightgray"
+            app:itemTextColor="@color/darkgrey"
+            app:menu="@menu/drawermenu" />
 
-        <TextView
-            android:id="@+id/text_text_date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="date"
-            android:paddingLeft="100dp"
-            android:textSize="30sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    </RadioGroup>
+            <TextView
+                android:id="@+id/radio_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:text="Attendance"
+                android:textColor="@color/blackt"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_text_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Date"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/blackt"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:paddingLeft="140dp">
+
+                <RadioButton
+                    android:id="@+id/radio_pirates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Present" />
+
+                <RadioButton
+                    android:id="@+id/absent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Absent" />
+
+                <RadioButton
+                    android:id="@+id/radio_late"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Late" />
 
 
+            </RadioGroup>
 
-</RelativeLayout>
+            <Button
+                android:id="@+id/button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/login"
+                android:padding="10dp"
+                android:text="Submit"
+                android:textColor="@color/textcolor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp"
+                    android:text="Accumulative Attendance grades:" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp"
+                    android:text="87.2%" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>
