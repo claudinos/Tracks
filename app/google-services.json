@@ -15,14 +15,6 @@
       },
       "oauth_client": [
         {
-          "client_id": "137938411514-asconu68tfj3mv8ri17rnii1mjfol7c0.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.moringa.tracks",
-            "certificate_hash": "207d68f5ddbcbb9ab9fbac4e214f5681f444845b"
-          }
-        },
-        {
           "client_id": "137938411514-rg27pbhe0q1gc4i8ebvj74mhk8i87uua.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
