@@ -36,7 +36,7 @@
                     android:text="Dashboard"
                     android:gravity="center_horizontal"
                     android:layout_centerInParent="true"
-                    android:textColor="@color/black"
+                    android:textColor="@color/blackc"
                     android:textSize="20dp"
                     android:textStyle="bold" />
                 <LinearLayout

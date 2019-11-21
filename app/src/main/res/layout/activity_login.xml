@@ -26,7 +26,7 @@
             android:padding="10dp"
             android:layout_marginBottom="10dp"
             android:textColor="@android:color/black"
-            android:textColorHint="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimaryc"
             android:textSize="20sp" />
 
         <EditText
@@ -39,7 +39,7 @@
             android:nextFocusDown="@+id/passwordEditText"
             android:padding="10dp"
             android:textColor="@android:color/black"
-            android:textColorHint="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimaryc"
             android:textSize="20sp" />
 
         <Button
@@ -48,15 +48,15 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:text="Log in"
-            android:background="@color/colorPrimary"
+            android:background="@color/colorPrimaryc"
             android:layout_marginTop="15dp"
-            android:textColor="@color/black" />
+            android:textColor="@color/blackc" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colorPrimaryc"
             android:textStyle="bold"
             android:textSize="15sp"
             android:text="Don't have an account? Sign up here!"
@@ -69,7 +69,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryc"
         android:textSize="30dp"
         android:textStyle="bold"
         android:layout_above="@+id/linearLayout"
