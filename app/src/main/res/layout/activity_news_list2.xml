@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsList">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/lin1">
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/textcolor"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp"
+        app:contentPadding="5dp"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="E-learning portal Udacity partners AP for students’ skill development"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/descrip"
+                android:textSize="13sp"
+                android:text="A total of five Udacity nanodegree programs have been selected by APSSDC, the content of which has been co-created by tech giants like Google, Kaggle, Amazon and ATT with industry-relevant projects, project reviews, and mentorship."/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/lin1"
+        android:id="@+id/lin2">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/textcolor"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="From Ananya Panday to Jacqueline Fernandez"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/descrip1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="While several fan clubs have been sharing videos and pictures from last night's Katy Perry welcome party we take a look at Bollywood celebs who expressed their joy of posing with Katy Perry and shared it on social media."
+                android:textSize="13sp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/lin2">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:cardBackgroundColor="@color/textcolor"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true"
+            app:contentPadding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Moringa Soccer Team B"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/descrip2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Right now, DC United seem to have a slight edge on the race to acquire the German. They lost Wayne Rooney once the 2019 MLS season ended, and have a Designated Player spot available."
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/enter"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/message"
+            android:textColor="@color/black"
+            android:hint="Enter the message..."
+            android:layout_alignParentBottom="true"/>
+
+        <ImageButton
+            android:id="@+id/btnSend"
+            android:layout_width="50dp"
+            android:layout_height="58dp"
+            android:background="@color/textcolor"
+            android:src="@drawable/ic_send_white_24dp" />
+    </LinearLayout>
+</RelativeLayout>

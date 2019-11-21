@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "137938411514",
+    "firebase_url": "https://tracks-5773f.firebaseio.com",
+    "project_id": "tracks-5773f",
+    "storage_bucket": "tracks-5773f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:137938411514:android:b45c29d438dce9cca1ce43",
+        "android_client_info": {
+          "package_name": "com.moringa.tracks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "137938411514-asconu68tfj3mv8ri17rnii1mjfol7c0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.moringa.tracks",
+            "certificate_hash": "207d68f5ddbcbb9ab9fbac4e214f5681f444845b"
+          }
+        },
+        {
+          "client_id": "137938411514-rg27pbhe0q1gc4i8ebvj74mhk8i87uua.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.moringa.tracks",
+            "certificate_hash": "7889e092f1d8bae7d1b12bece0eb938d01fb56ab"
+          }
+        },
+        {
+          "client_id": "137938411514-042uqdl9tsuf029ck7ppa9ojdrh7ti33.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLFoM_C2qvXYWnG3o6067GvdN5Tj8xi3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "137938411514-042uqdl9tsuf029ck7ppa9ojdrh7ti33.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
