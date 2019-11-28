@@ -19,15 +19,17 @@
             android:id="@+id/emailEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:background="@android:color/white"
             android:hint="Email"
+
+            android:includeFontPadding="true"
             android:inputType="textEmailAddress"
             android:nextFocusDown="@+id/passwordEditText"
             android:padding="10dp"
-            android:layout_marginBottom="10dp"
             android:textColor="@android:color/black"
-            android:textColorHint="@color/blue"
-            android:textSize="20sp" />
+            android:textColorHint="@color/lightgray"
+            android:textSize="15sp" />
 
         <EditText
             android:id="@+id/passwordEditText"
@@ -39,8 +41,8 @@
             android:nextFocusDown="@+id/passwordEditText"
             android:padding="10dp"
             android:textColor="@android:color/black"
-            android:textColorHint="@color/blue"
-            android:textSize="20sp" />
+            android:textColorHint="@color/lightgray"
+            android:textSize="15sp" />
 
         <Button
             android:id="@+id/passwordLoginButton"
@@ -59,7 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:textColor="@color/blue"
+            android:textColor="@color/green"
             android:textStyle="bold"
             android:textSize="15sp"
             android:text="Don't have an account? Sign up here!"
@@ -69,13 +71,24 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/font"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
         android:text="Login"
-        android:textColor="@color/blue"
+        android:textColor="@color/green"
         android:textSize="30dp"
         android:textStyle="bold"
-        android:layout_above="@+id/linearLayout"
-        android:layout_centerHorizontal="true" />
+ />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="216dp"
+        android:layout_height="134dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/moringalogo" />
+
 
 </RelativeLayout>

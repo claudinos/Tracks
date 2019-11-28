@@ -153,7 +153,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                     public void onComplete(@NonNull Task<Void> task) {
                         if(task.isSuccessful()){
                             Log.d(TAG, user.getDisplayName());
-                            Toast.makeText(SignUpActivity.this, "Welcome to Tracks\uD83D\uDC63", Toast.LENGTH_LONG).show();
+                            Toast.makeText(SignUpActivity.this, "Welcome to Tracks", Toast.LENGTH_LONG).show();
                         }
                     }
                 });
