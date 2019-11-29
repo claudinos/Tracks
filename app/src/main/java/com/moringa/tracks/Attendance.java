@@ -43,6 +43,7 @@ textViewDate.setText(currentDate);
     public void onRadioButtonClicked(View view){
 
         button.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 int rgs_id = radioGroup.getCheckedRadioButtonId();

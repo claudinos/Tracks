@@ -9,10 +9,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".JobsActivity"></activity>
-        <activity android:name=".NewsList" />
-        <activity android:name=".AttendanceForm" />
-        <activity android:name=".Attendance"></activity>
+        <activity android:name=".JobsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.moringa.tracks.Attendance">
+
+            </meta-data></activity>
+        <activity android:name=".NewsList">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.moringa.tracks.Attendance">
+
+            </meta-data></activity>
+        <activity android:name=".AttendanceForm">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.moringa.tracks.Attendance">
+
+            </meta-data></activity>
+        <activity android:name=".Attendance">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.moringa.tracks.Attendance">
+
+            </meta-data>
+        </activity>
         <activity android:name=".ProfileActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".LoginActivity" />
@@ -22,10 +43,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.moringa.tracks.MainActivity"></meta-data>
         </activity>
 
         <meta-data
