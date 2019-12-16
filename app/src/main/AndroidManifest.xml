@@ -13,25 +13,21 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.moringa.tracks.Attendance">
-
             </meta-data></activity>
         <activity android:name=".NewsList">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.moringa.tracks.Attendance">
-
             </meta-data></activity>
         <activity android:name=".AttendanceForm">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.moringa.tracks.Attendance">
-
             </meta-data></activity>
         <activity android:name=".Attendance">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.moringa.tracks.Attendance">
-
             </meta-data>
         </activity>
         <activity android:name=".ProfileActivity" />

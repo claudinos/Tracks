@@ -15,7 +15,7 @@
             android:id="@+id/lin"
             android:layout_width="match_parent"
             android:layout_height="190dp"
-            android:background="@drawable/rain"
+            android:background="@drawable/ba"
             android:orientation="vertical">
 
             <ImageView
@@ -24,8 +24,6 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:src="@drawable/lil" />
-
-
         </LinearLayout>
 
 

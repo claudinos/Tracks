@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="170dp"
     android:padding="20dp"
-    android:background="@drawable/rain">
+    android:background="@drawable/ba">
     <ImageView
         android:layout_width="75dp"
         android:layout_height="75dp"
@@ -12,14 +12,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Gisa"
+        android:text="Saro"
         android:textColor="@color/textcolor"
         android:textStyle="bold"
         android:layout_marginTop="5dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="gisa@gmail.com"
+        android:text="saro@gmail.com"
         android:textColor="@color/textcolor"
         android:textStyle="bold"
         android:layout_marginTop="3dp"/>

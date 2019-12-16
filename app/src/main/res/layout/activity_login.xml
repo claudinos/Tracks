@@ -16,13 +16,27 @@
         android:id="@+id/linearLayout">
 
         <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/white"
+            android:hint="Username"
+            android:includeFontPadding="true"
+            android:inputType="textEmailAddress"
+            android:nextFocusDown="@+id/passwordEditText"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/lightgray"
+            android:textSize="15sp" />
+
+        <EditText
             android:id="@+id/emailEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:background="@android:color/white"
             android:hint="Email"
-
             android:includeFontPadding="true"
             android:inputType="textEmailAddress"
             android:nextFocusDown="@+id/passwordEditText"
@@ -70,17 +84,16 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/font"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/linearLayout"
-        android:layout_centerHorizontal="true"
-        android:text="Login"
-        android:textColor="@color/green"
-        android:textSize="30dp"
-        android:textStyle="bold"
- />
+<!--    <TextView-->
+<!--        android:id="@+id/font"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_above="@+id/linearLayout"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="Login"-->
+<!--        android:textColor="@color/green"-->
+<!--        android:textSize="30dp"-->
+<!--        android:textStyle="bold" />-->
 
     <ImageView
         android:id="@+id/imageView"
@@ -88,7 +101,7 @@
         android:layout_height="134dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        app:srcCompat="@drawable/moringalogo" />
+        app:srcCompat="@drawable/lo" />
 
 
 </RelativeLayout>

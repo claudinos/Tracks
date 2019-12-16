@@ -35,7 +35,7 @@
                     android:layout_height="134dp"
                     android:layout_centerHorizontal="true"
                     android:layout_gravity="center"
-                    app:srcCompat="@drawable/moringalogo" />
+                    app:srcCompat="@drawable/lo" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -66,8 +66,7 @@
                             android:layout_marginLeft="20dp"
                             android:gravity="center"
                             android:orientation="vertical"
-                            android:layout_marginTop="5dp"
-                            >
+                            android:layout_marginTop="5dp">
                             <ImageView
                                 android:layout_width="80dp"
                                 android:layout_height="90dp"
